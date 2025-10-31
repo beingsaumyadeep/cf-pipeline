@@ -10,11 +10,11 @@ export default [
   index("routes/home.tsx"),
   route("/api/chat", "routes/api.chat.ts"),
   ...prefix("auth", [
-    layout("pages/accounts/index.tsx", [
-      route("login", "pages/accounts/Login.tsx"),
+    layout("pages/Accounts/index.tsx", [
+      route("login", "pages/Accounts/Login.tsx"),
       route("register", "pages/Accounts/Register.tsx"),
-      route("forgot-password", "pages/accounts/ForgotPassword.tsx"),
-      route("reset-password", "pages/accounts/ResetPassword.tsx"),
+      route("forgot-password", "pages/Accounts/ForgotPassword.tsx"),
+      route("reset-password", "pages/Accounts/ResetPassword.tsx"),
     ]),
   ]),
 ] satisfies RouteConfig;
